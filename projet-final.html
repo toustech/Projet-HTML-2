@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe</title>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+  </nav>
+
+  <!-- ===== PRÉSENTATION ===== -->
+  <header id="home">
+    <h1>John Doe</h1>
+    <p>Hello! Je suis John, un étudiant qui aime apprendre de nouvelles technologies et construire des sites web.</p>
+    <img src="projetfinal.jpg" alt="Illustration d'une montagne" width="300">
+  </header>
+
+  <main>
+
+    <!-- ===== HOBBIES ===== -->
+    <section id="about">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Music</li>
+        <li>Traveling</li>
+        <li>Playing Football</li>
+      </ul>
+
+      <h2>My Favorite Movies</h2>
+      <ol>
+        <li>Inception</li>
+        <li>Interstellar</li>
+        <li>The Dark Knight</li>
+      </ol>
+    </section>
+
+    <!-- ===== EMPLOI DU TEMPS ===== -->
+    <section>
+      <h2>Mon Emploi du Temps</h2>
+      <table border="1" cellpadding="4" cellspacing="0" width="600">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+            <th>Evening</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>Practice</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>JavaScript</td>
+            <td>Python</td>
+            <td>Projects</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>AI</td>
+            <td>Database</td>
+            <td>Revision</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Thursday</td>
+            <td>FastAPI</td>
+            <td>Project Work</td>
+            <td>Free Time</td>
+          </tr>
+          <tr>
+            <td>Testing</td>
+            <td>Deployment</td>
+            <td>Free Time</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td colspan="3" >Personal Projects</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td colspan="3" >Rest</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== VIDÉO ===== -->
+    <section>
+      <h2>Ma Vidéo de Présentation</h2>
+      <video width="360" controls>
+        <source src="videofinal.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- ===== FORMULAIRE ===== -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form >
+        <fieldset>
+          <legend>Envoyez-moi un message</legend>
+          <table>
+            <tr>
+              <td><label for="fullname">Nom complet:</label></td>
+              <td><input type="text" id="fullname" name="fullname"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+              <td><label for="password">Mot de passe:</label></td>
+              <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+              <td><label for="dob">Date de naissance:</label></td>
+              <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+              <td>Genre:</td>
+              <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Masculin</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Féminin</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Autre</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Compétences:</td>
+              <td>
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="javascript">
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="python" name="skills" value="python">
+                <label for="python">Python</label>
+                <input type="checkbox" id="others" name="skills" value="others">
+                <label for="others">Autres</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="country">Pays:</label></td>
+              <td>
+                <select id="country" name="country">
+                  <option value="">-- Sélectionnez un pays --</option>
+                  <option value="senegal">Sénégal</option>
+                  <option value="mali">Mali</option>
+                  <option value="france">France</option>
+                  <option value="usa">USA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="picture">Photo de profil:</label></td>
+              <td><input type="file" id="picture" name="picture" accept="image/*"></td>
+            </tr>
+            <tr>
+              <td><label for="message">Message:</label></td>
+              <td><textarea id="message" name="message" ></textarea></td>
+            </tr>
+          </table>
+          <button type="submit">Soumettre</button>
+          <button type="reset">Réinitialiser</button>
+        </fieldset>
+      </form>
+
+      <p><a href="#about">Aller à la page À propos</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 John Doe. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
